@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        올라가라~~~~
+        여기는 일단 냅두기 영역
       </div>
     </div>
   );
