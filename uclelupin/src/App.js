@@ -1,4 +1,4 @@
-
+import TeamPage from './page/TeamPage';
 import './App.css';
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <div>
         여기는 일단 냅두기 영역
+        <TeamPage/>
       </div>
     </div>
   );
