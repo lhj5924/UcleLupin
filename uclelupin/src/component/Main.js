@@ -1,10 +1,17 @@
 
+
+
 function Main() {
-  return (
-    <section className="body-wrapper">
-      
-    </section>
-  );
+    const [content, setContent] = useState([]);
+    const [selectedContentIndex, setSelectedContentIndex] = useState(null);
+
+    return (
+        <section className="body-wrapper">
+            <ul>
+
+            </ul>
+        </section>
+    );
 }
 
 export default Main;
