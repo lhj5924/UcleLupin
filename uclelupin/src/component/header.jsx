@@ -64,6 +64,7 @@ function Header() {
                 <ul>
                     <li>수강 중인 코스</li>
                     <li>코플릿</li>
+                    <li>Jobs</li>
                     <li className="icon">
                         <FontAwesomeIcon icon={faCircleUser} />
                     </li>
