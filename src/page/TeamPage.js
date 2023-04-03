@@ -41,7 +41,7 @@ function TeamPage(){
             <ul>
                 <li>
                     <div className='img'></div>
-                    <p>팀원 1</p>
+                    <p>기지원</p>
                     <a href='/'><p>깃헙 주소</p></a>
                 </li>
                 <li>
