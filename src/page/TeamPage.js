@@ -18,22 +18,35 @@ let TeamPageCompo = styled.div`
     ul{
         list-style: none;
         font-size: 20px;
-        /* display: grid;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 30px;
+        @media screen and (max-width: 1200px){
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gird-gap: 10px;
+        }
+        @media screen and (max-width: 996px){
+        /* width: 100vw; */
+        display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-gap: 40px; */
-        display: flex;
-        flex-direction: row;
-        justify-contents: space-between;
-        align-items : center;
+        }
+        @media screen and (max-width: 704px){
+        /* width: 100vw; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        }
         
     }
     li{
         width: 280px;
-        height: 270px;
-        border: 2px solid darkgrey;
+        height: 360px;
+        /* border: 2px solid darkgrey; */
+        border-radius: 20px;
+        box-shadow: 3px 3px 5px darkgrey;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         padding-top: 10px;
     }
@@ -47,6 +60,7 @@ let TeamPageCompo = styled.div`
         background-position : center;
         background-repeat: no-repeat;
         margin-bottom: 14px;
+        margin-top: 20px;
     }
   
     .ki{
@@ -63,8 +77,16 @@ let TeamPageCompo = styled.div`
     .choi{
         background-image: url(${profileCHOI});
     }
+    p{
+        font-size: 16px;
+        margin-bottom : 10px;
+    }
+    a{
+        font-size: 16px;
+    }
     .name{
         font-size: 26px;
+        margin-bottom: 40px;
     }
 `;
 function TeamPage(){
@@ -74,32 +96,32 @@ function TeamPage(){
             <ul>
                 <li>
                     <div className='img ki'></div>
-                    <p className='name'>기지원</p>
-                    <div className='desc'>
+                    <div className='profile'>
+                        <p className='name'>기지원</p>
                         <p>담당 컴포넌트 : Team Page</p>
                         <p>Github URL : <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-11--teamPage'>'UcleLupin/TeamPage'</a></p>
                     </div>
                 </li>
                 <li>
                     <div className='img lee'></div>
-                    <p className='name'>이현진</p>
-                    <div className='desc'>
+                    <div className='profile'>
+                        <p className='name'>이현진</p>
                         <p>담당 컴포넌트 : List</p>
                         <p>Github URL : <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-10--feature-list'>'UcleLupin/List'</a></p>
                     </div>
                 </li>
                 <li>
                     <div className='img cho'></div>
-                    <p className='name'>조지현</p>
-                    <div className='desc'>
+                    <div className='profile'>
+                        <p className='name'>조지현</p>
                         <p>담당 컴포넌트 : Main</p>
                         <p>Github URL : <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-9--feature-main'>'UcleLupin/Main'</a></p>
                     </div>
                 </li>
                 <li>
                     <div className='img choi'></div>
-                    <p className='name'>최예슬</p>
-                    <div className='desc'>
+                    <div className='profile'>
+                        <p className='name'>최예슬</p>
                         <p>담당 컴포넌트 : Header&Footer</p>
                         <p>Github URL : <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-8--header-footer'>'UcleLupin/Header&Footer'</a></p>
                     </div>
