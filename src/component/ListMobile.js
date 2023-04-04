@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-// 웹페이지 버전 리스트
+// 모바일 버전 리스트
+
 const ListBox = styled.ul`
   position: absolute;
-  top:75px;
-  right: 0px;
+  top: 65px;
+  width: 100vw;
   font-size: 24px;
-  width : 200px;
   background-color: #FFF;
   color : gray;
   box-shadow: 0px 8px 6px rgba(0,0,0,0.5);
@@ -15,22 +15,6 @@ const ListBox = styled.ul`
   justify-content: stretch;
   border-radius: 5px;
   z-index:1;
-
-  // 삼각형 꼭지
-  ::after {
-    content: "";
-    position: absolute;
-    border-style: solid;
-    border-width: 10px;
-    border-color: transparent;
-    border-bottom: 10px solid #FFF;
-    display: block;
-    width: 0;
-    height: 0;
-    z-index: 1;
-    top: -18px;
-    right: 18px;
-  }
 `
 const HyperLink = styled.a`
   width : 100%;
@@ -40,37 +24,45 @@ const HyperLink = styled.a`
 `
 
 const StyledLi = styled.li`
-  padding: 12px 24px;
-  border-bottom: 1px solid gray;
+  padding: 8px 24px;
+  margin: 0px 5px;
+  line-height: 40px;
   background-color: none;
 
-   :first-child {
-    padding: 22px 0;
-  }
-   :last-child {
-    border-bottom: none;
-   }
    :hover {
     background-color: rgba(0,0,0,0.085);
   }
-`
-const Username = styled.span`
-  color: #452CDD;
 `
 const StyledSvg = styled.svg`
   margin: 0 24px 0 0;
 `
 
-export default function List(){
-  let username = 'Guest';
+
+
+export default function ListMobile(){
+
 
   return (
     <>
     <ListBox>
-        <StyledLi>
-          <Username>{username}</Username>
-          <span>님, 안녕하세요!</span>
-        </StyledLi>
+    <StyledLi>
+          <HyperLink href="https://urclass.codestates.com/courses/active" title="수강 중인 코스">
+          <StyledSvg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ico__menu--mobile"><path d="M2 3H8C9.06087 3 10.0783 3.42143 10.8284 4.17157C11.5786 4.92172 12 5.93913 12 7V21C12 20.2044 11.6839 19.4413 11.1213 18.8787C10.5587 18.3161 9.79565 18 9 18H2V3Z" stroke="#455573" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 3H16C14.9391 3 13.9217 3.42143 13.1716 4.17157C12.4214 4.92172 12 5.93913 12 7V21C12 20.2044 12.3161 19.4413 12.8787 18.8787C13.4413 18.3161 14.2044 18 15 18H22V3Z" stroke="#455573" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </StyledSvg>
+          <div>수강 중인 코스</div>
+          </HyperLink></StyledLi>
+          <StyledLi>
+          <HyperLink href="https://urclass.codestates.com/classrooms" title="코플릿">
+          <StyledSvg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ico__menu--mobile"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.2929 5.29289C15.6834 4.90237 16.3166 4.90237 16.7071 5.29289L22.7071 11.2929C23.0976 11.6834 23.0976 12.3166 22.7071 12.7071L16.7071 18.7071C16.3166 19.0976 15.6834 19.0976 15.2929 18.7071C14.9024 18.3166 14.9024 17.6834 15.2929 17.2929L20.5858 12L15.2929 6.70711C14.9024 6.31658 14.9024 5.68342 15.2929 5.29289Z" fill="#455573"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8.70711 5.29289C9.09763 5.68342 9.09763 6.31658 8.70711 6.70711L3.41421 12L8.70711 17.2929C9.09763 17.6834 9.09763 18.3166 8.70711 18.7071C8.31658 19.0976 7.68342 19.0976 7.29289 18.7071L1.29289 12.7071C0.902369 12.3166 0.902369 11.6834 1.29289 11.2929L7.29289 5.29289C7.68342 4.90237 8.31658 4.90237 8.70711 5.29289Z" fill="#455573"></path>
+          </StyledSvg>
+          <div>코플릿</div>
+          </HyperLink></StyledLi>
+          <StyledLi>
+          <HyperLink href="https://urclass.codestates.com/jobs/new" title="Jobs">
+          <StyledSvg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="ico__menu--mobile"><path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#455573" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#455573" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </StyledSvg>
+          <div>Jobs</div>
+          </HyperLink></StyledLi>
         <StyledLi>
           <HyperLink href="https://help-urclass-codestates.zendesk.com/hc/ko" title="수강생 헬프센터">
           <StyledSvg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="ico__menu--link">
