@@ -12,7 +12,8 @@ const ContentSection = styled.section`
 
     h2 {
         text-align: left;
-        margin-bottom: 10px;
+        margin: 20px 0px;
+        font-size: 2em;
     }
     @media screen and (max-width: 1000px) {
         width: 80%;
@@ -39,6 +40,8 @@ const ContentList = styled.ul`
     span {
         display: block;
         text-align: left;
+        font-size :1.8em;
+        margin-bottom: 20px;
     }
 
     @media screen and (max-width: 1000px) {
@@ -67,25 +70,7 @@ const ContentItem = styled.li`
 function Main() {
     const [content, setContent] = useState(contentData);
 
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
-
-    const handleScroll = () => {
-        const windowHeight = window.innerHeight;
-        const documentHeight = document.documentElement.scrollHeight;
-        const scrollTop = document.documentElement.scrollTop;
-
-        if (windowHeight + scrollTop === documentHeight) {
-            // 스크롤이 맨 아래에 도달했을 때 새로운 데이터를 가져옴
-            const newData = [...contentData];
-            setContent([...content, ...newData]);
-        }
-    };
+    
 
     return (
         <ContentSection>
