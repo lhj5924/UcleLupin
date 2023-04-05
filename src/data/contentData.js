@@ -72,7 +72,7 @@ const contentData = [
       {
         title: "Example 15",
         image: "https://via.placeholder.com/150",
-        link: "https://example.com/15"
+        link: "https://example.com/"
       }
   ];
   
