@@ -5,10 +5,10 @@ const FooterContainer = styled.footer`
     padding: 20px;
     display: flex;
     align-items: center;
-    position: fixed;
+    /* position: fixed;
     bottom: 0px;
     left: 0;
-    right: 0;
+    right: 0; */
     padding: 5px;
     box-shadow: 7px 7px 7px 7px #00000012;
     height: 100px;
