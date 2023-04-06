@@ -13,7 +13,7 @@ const HeaderContainer = styled.div`
     left: 0;
     right: 0;
     padding: 5px;
-    box-shadow: 2px 4px 7px 1px #00000012;
+    box-shadow: 7px 7px 7px 7px #00000012;
 `;
 
 const Logo = styled.div`
@@ -68,6 +68,7 @@ const ModalContainer = styled.div`
     height: 200px;
     background-color: white;
     box-shadow: 2px 4px 7px 1px #00000032;
+    border-radius: 5px;
 `;
 
 const ModalContent = styled.div`
