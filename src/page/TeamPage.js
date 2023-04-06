@@ -6,7 +6,7 @@ import profileCHO from './../image/지현님프로필.png';
 import profileCHOI from './../image/예슬님프로필.jpg';
 
 let TeamPageCompo = styled.div`
-    margin-top: 65px;
+    margin-top: 30px;
     background-color: white;
     width: 100vw;
     height: 100vh;
@@ -14,7 +14,7 @@ let TeamPageCompo = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     ul{
         list-style: none;
         font-size: 20px;
@@ -49,6 +49,20 @@ let TeamPageCompo = styled.div`
         justify-content: start;
         align-items: center;
         padding-top: 10px;
+        @media screen and (max-width: 1200px){
+            width: 100%;
+        }
+        @media screen and (max-width: 996px){
+            width: 100%;
+        }
+        @media screen and (max-width: 704px){
+            width: 100%;
+        }
+    }
+    li:hover{
+        background: linear-gradient(50deg,#eaafc8, #654ea3);
+       font-weight: bold;
+       color: #ffff;
     }
     .img{
         width: 100px;
@@ -81,8 +95,13 @@ let TeamPageCompo = styled.div`
         font-size: 16px;
         margin-bottom : 10px;
     }
+    p:last-of-type{
+        margin-top: 30px;
+        
+    }
     a{
         font-size: 16px;
+        margin-top: 30px;
     }
     .name{
         font-size: 26px;
@@ -98,32 +117,36 @@ function TeamPage(){
                     <div className='img ki'></div>
                     <div className='profile'>
                         <p className='name'>기지원</p>
-                        <p>담당 컴포넌트 : Team Page</p>
-                        <p>Github URL : <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-11--teamPage'>'UcleLupin/TeamPage'</a></p>
+                        <p>담당 컴포넌트 ➤ Team Page</p>
+                        <p>Github URL </p>
+                        <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-11--teamPage'>🔗 UcleLupin/TeamPage</a>
                     </div>
                 </li>
                 <li>
                     <div className='img lee'></div>
                     <div className='profile'>
                         <p className='name'>이현진</p>
-                        <p>담당 컴포넌트 : List</p>
-                        <p>Github URL : <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-10--feature-list'>'UcleLupin/List'</a></p>
+                        <p>담당 컴포넌트 ➤ List</p>
+                        <p>Github URL </p>
+                        <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-10--feature-list'>🔗 UcleLupin/List</a>
                     </div>
                 </li>
                 <li>
                     <div className='img cho'></div>
                     <div className='profile'>
                         <p className='name'>조지현</p>
-                        <p>담당 컴포넌트 : Main</p>
-                        <p>Github URL : <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-9--feature-main'>'UcleLupin/Main'</a></p>
+                        <p>담당 컴포넌트 ➤ Main</p>
+                        <p>Github URL </p>
+                        <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-9--feature-main'>🔗 UcleLupin/Main</a>
                     </div>
                 </li>
                 <li>
                     <div className='img choi'></div>
                     <div className='profile'>
                         <p className='name'>최예슬</p>
-                        <p>담당 컴포넌트 : Header&Footer</p>
-                        <p>Github URL : <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-8--header-footer'>'UcleLupin/Header&Footer'</a></p>
+                        <p>담당 컴포넌트 ➤ Header&Footer</p>
+                        <p>Github URL</p>
+                        <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-8--header-footer'>🔗 UcleLupin/Header&Footer</a>
                     </div>
                 </li>
             </ul>
