@@ -3,6 +3,9 @@ import logo from "../image/lupinclass.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser, faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import List from './List';
+import ListMobile from './ListMobile';
 
 const HeaderContainer = styled.div`
     display: flex;
@@ -82,9 +85,14 @@ const ModalContent = styled.div`
 
 function Header() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isMModalOpen, setIsMModalOpen] = useState(false);
+
+
     return (
-        <HeaderContainer>
-            <Logo></Logo>
+    <HeaderContainer>
+            <Link to="/">
+                <Logo></Logo>
+            </Link>
             <Nav>
                 <ul>
                     <li className="list">수강 중인 코스</li>
@@ -93,11 +101,15 @@ function Header() {
                     <li
                         className="desktopIcon"
                         onMouseEnter={() => setIsModalOpen(true)}
-                        onMouseLeave={() => setIsModalOpen(false)}
+                        // onMouseLeave={() => setIsModalOpen(false)}
                     >
                         <FontAwesomeIcon icon={faCircleUser} />
                     </li>
-                    <li className="mobileIcon">
+                    <li className="mobileIcon"
+                        onClick={() => setIsMModalOpen(true)}>
+                            {isMModalOpen
+                            ?<ListMobile />
+                            : null}
                         <FontAwesomeIcon icon={faBars} />
                     </li>
                 </ul>
@@ -109,14 +121,15 @@ function Header() {
 
 const Modal = () => {
     return (
-        <ModalContainer>
-            <ModalContent>
-                <div>OOO님, 안녕하세요!</div>
-                <div>수강생 헬프센터</div>
-                <div>마이페이지</div>
-                <div>로그아웃</div>
-            </ModalContent>
-        </ModalContainer>
+        // <ModalContainer>
+        //     <ModalContent>
+        //         <div>OOO님, 안녕하세요!</div>
+        //         <div>수강생 헬프센터</div>
+        //         <div>마이페이지</div>
+        //         <div>로그아웃</div>
+        //     </ModalContent>
+        // </ModalContainer>
+        <List />
     );
 };
 
