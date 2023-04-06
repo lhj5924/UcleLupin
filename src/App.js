@@ -6,6 +6,7 @@ import TeamPage from "./page/TeamPage";
 import Footer from './component/footer'
 
 function App() {
+
     return (
         <BrowserRouter>
             <div className="App">

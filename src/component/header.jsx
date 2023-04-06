@@ -3,8 +3,9 @@ import logo from "../image/lupinclass.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser, faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
+import List from './List';
+import ListMobile from './ListMobile';
 
 const HeaderContainer = styled.div`
     display: flex;
@@ -84,9 +85,12 @@ const ModalContent = styled.div`
 
 function Header() {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isMModalOpen, setIsMModalOpen] = useState(false);
+
+
     return (
-        <HeaderContainer>
-            <Link to={'/'}>
+    <HeaderContainer>
+            <Link to="/">
                 <Logo></Logo>
             </Link>
             <Nav>
@@ -94,16 +98,18 @@ function Header() {
                     <li className="list">수강 중인 코스</li>
                     <li className="list">코플릿</li>
                     <li className="list">Jobs</li>
-                    <Link to={'/teampage'}>
-                        <li
-                            className="desktopIcon"
-                            onMouseEnter={() => setIsModalOpen(true)}
-                            onMouseLeave={() => setIsModalOpen(false)}
-                        >
-                            <FontAwesomeIcon icon={faCircleUser} />
-                        </li>
-                    </Link>
-                    <li className="mobileIcon">
+                    <li
+                        className="desktopIcon"
+                        onMouseEnter={() => setIsModalOpen(true)}
+                        // onMouseLeave={() => setIsModalOpen(false)}
+                    >
+                        <FontAwesomeIcon icon={faCircleUser} />
+                    </li>
+                    <li className="mobileIcon"
+                        onClick={() => setIsMModalOpen(true)}>
+                            {isMModalOpen
+                            ?<ListMobile />
+                            : null}
                         <FontAwesomeIcon icon={faBars} />
                     </li>
                 </ul>
@@ -115,14 +121,15 @@ function Header() {
 
 const Modal = () => {
     return (
-        <ModalContainer>
-            <ModalContent>
-                <div>OOO님, 안녕하세요!</div>
-                <div>수강생 헬프센터</div>
-                <div>마이페이지</div>
-                <div>로그아웃</div>
-            </ModalContent>
-        </ModalContainer>
+        // <ModalContainer>
+        //     <ModalContent>
+        //         <div>OOO님, 안녕하세요!</div>
+        //         <div>수강생 헬프센터</div>
+        //         <div>마이페이지</div>
+        //         <div>로그아웃</div>
+        //     </ModalContent>
+        // </ModalContainer>
+        <List />
     );
 };
 
