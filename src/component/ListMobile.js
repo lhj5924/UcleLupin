@@ -9,12 +9,11 @@ const ListBox = styled.ul`
   left:0;
   width: 100vw;
   background-color: #FFF;
-  color : gray;
-  box-shadow: 0px 8px 6px rgba(0,0,0,0.5);
+  color : #455573;
+  box-shadow: 0px 8px 6px rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
-  border-radius: 5px;
+  align-items: flex-start;
   z-index:1;
 `
 const HyperLink = styled.a`
@@ -25,7 +24,8 @@ const HyperLink = styled.a`
 `
 
 const StyledLi = styled.li`
-  padding: 8px 24px;
+  width: 100%;
+  padding: 8px 32px;
   margin: 0px 5px;
   line-height: 40px;
   background-color: none;
