@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const ContentSection = styled.section`
     margin: 0 auto;
     padding: 0;
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -12,8 +13,18 @@ const ContentSection = styled.section`
 
     h2 {
         text-align: left;
-        margin: 20px 0px;
+        margin: 30px 0px;
         font-size: 2em;
+    }
+
+    div {
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+        font-size: 1.6em;
+        text-align: left;
+        margin-bottom: 30px;
     }
     @media screen and (max-width: 1000px) {
         width: 80%;
@@ -74,6 +85,8 @@ function Main() {
 
     return (
         <ContentSection>
+            <h2>Into your course</h2>
+            <div>✨ 프로젝트 힘내보아요~ </div>
             <h2>Magazine</h2>
             <ContentList>
                 {content.map((item, index) => (
