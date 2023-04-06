@@ -8,7 +8,7 @@ const ContentSection = styled.section`
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: 100vh;
+    /* height: 100vh; */
 
     h2 {
         text-align: left;
