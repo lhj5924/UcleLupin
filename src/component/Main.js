@@ -8,23 +8,28 @@ const ContentSection = styled.section`
     margin-top: 90px;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 75%;
     /* height: 100vh; */
 
     h2 {
         text-align: left;
-        margin: 30px 0px;
-        font-size: 2em;
+        margin: 20px 0px;
+        font-size: 20px;
+        color: rgb(69, 85, 115);
     }
 
     div {
         width: 100%;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(242, 244, 247);
+        border-radius: 12px;
         padding: 20px;
-        border-radius: 10px;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
-        font-size: 1.6em;
+        background-color: white;
+        box-shadow: rgb(0 0 0 / 20%) 2px 2px 10px;
+        font-size: 1em;
         text-align: left;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     @media screen and (max-width: 1000px) {
         width: 80%;
@@ -43,7 +48,7 @@ const ContentList = styled.ul`
 
     img {
         width: 100%;
-        height: 180px;
+        height: 200px;
         margin-bottom: 10px;
         border-radius: 10px;
     }
@@ -51,8 +56,10 @@ const ContentList = styled.ul`
     span {
         display: block;
         text-align: left;
-        font-size: 1.8em;
-        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(69, 85, 115);
+        margin-bottom: 10px;
     }
 
     @media screen and (max-width: 1000px) {
