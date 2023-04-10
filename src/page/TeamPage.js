@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-import profileKI from './../image/지원님프로필.jpg';
-import profileLEE from './../image/현진님프로필.png';
-import profileCHO from './../image/지현님프로필.png';
-import profileCHOI from './../image/예슬님프로필.jpg';
+import profileKI from './../image/ki.jpg';
+import profileLEE from './../image/lee.png'
+import profileCHO from './../image/cho.png';
+import profileCHOI from './../image/choi.jpg';
 
 let TeamPageCompo = styled.div`
     margin-top: 30px;
@@ -64,33 +64,16 @@ let TeamPageCompo = styled.div`
        font-weight: bold;
        color: #ffff;
     }
-    .img{
+    img{
         width: 100px;
         height: 100px;
         /* border: 1px solid black; */
         border-radius: 50%;
-        text-align: center;
-        background-size: cover;
-        background-position : center;
-        background-repeat: no-repeat;
         margin-bottom: 14px;
         margin-top: 20px;
     }
   
-    .ki{
-        background-image: url(${profileKI});
-    }
-    .lee{
-        background-image: url(${profileLEE});
-        background-size : contain;
-    }
-    .cho{
-        background-image: url(${profileCHO});
-        background-size: contain;
-    }
-    .choi{
-        background-image: url(${profileCHOI});
-    }
+
     p{
         font-size: 16px;
         margin-bottom : 10px;
@@ -114,7 +97,7 @@ function TeamPage(){
         <TeamPageCompo>
             <ul>
                 <li>
-                    <div className='img ki'></div>
+                    <img src={profileKI} alt='프로필'/>
                     <div className='profile'>
                         <p className='name'>기지원</p>
                         <p>담당 컴포넌트 ➤ Team Page</p>
@@ -123,7 +106,7 @@ function TeamPage(){
                     </div>
                 </li>
                 <li>
-                    <div className='img lee'></div>
+                    <img src={profileLEE} alt='프로필'/>
                     <div className='profile'>
                         <p className='name'>이현진</p>
                         <p>담당 컴포넌트 ➤ List</p>
@@ -132,7 +115,7 @@ function TeamPage(){
                     </div>
                 </li>
                 <li>
-                    <div className='img cho'></div>
+                    <img src={profileCHO} alt='프로필'/>
                     <div className='profile'>
                         <p className='name'>조지현</p>
                         <p>담당 컴포넌트 ➤ Main</p>
@@ -141,7 +124,7 @@ function TeamPage(){
                     </div>
                 </li>
                 <li>
-                    <div className='img choi'></div>
+                    <img src={profileCHOI} alt='프로필'/>
                     <div className='profile'>
                         <p className='name'>최예슬</p>
                         <p>담당 컴포넌트 ➤ Header&Footer</p>
