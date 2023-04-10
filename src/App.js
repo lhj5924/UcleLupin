@@ -7,7 +7,7 @@ import Footer from "./component/footer";
 
 function App() {
     return (
-        <BrowserRouter basename="/UcleLupin">
+        <BrowserRouter basename="/">
             <div className="App">
                 <Header />
                 <Routes>

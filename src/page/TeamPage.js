@@ -97,7 +97,7 @@ function TeamPage(){
         <TeamPageCompo>
             <ul>
                 <li>
-                    <img src={profileKI} alt='프로필'/>
+                    <img src='https://github.com/UcleLupin/ki.55a36d399e5382c5c44b.jpg' alt='프로필'/>
                     <div className='profile'>
                         <p className='name'>기지원</p>
                         <p>담당 컴포넌트 ➤ Team Page</p>
@@ -106,7 +106,7 @@ function TeamPage(){
                     </div>
                 </li>
                 <li>
-                    <img src={profileLEE} alt='프로필'/>
+                    <img src='https://github.com/UcleLupin/lee.b487ef96d93f7538b001.png' alt='프로필'/>
                     <div className='profile'>
                         <p className='name'>이현진</p>
                         <p>담당 컴포넌트 ➤ List</p>
@@ -124,7 +124,7 @@ function TeamPage(){
                     </div>
                 </li>
                 <li>
-                    <img src={profileCHOI} alt='프로필'/>
+                    <img src='https://github.com/UcleLupin/choi.6628cef8b9b42fb603ef.jpg' alt='프로필'/>
                     <div className='profile'>
                         <p className='name'>최예슬</p>
                         <p>담당 컴포넌트 ➤ Header&Footer</p>
