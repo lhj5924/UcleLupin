@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-import profileKI from './../image/ki.jpg';
-import profileLEE from './../image/lee.png'
-import profileCHO from './../image/cho.png';
-import profileCHOI from './../image/choi.jpg';
+// import profileKI from './../image/ki.jpg';
+// import profileLEE from './../image/lee.png'
+// import profileCHO from './../image/cho.png';
+// import profileCHOI from './../image/choi.jpg';
 
 let TeamPageCompo = styled.div`
     margin-top: 30px;
