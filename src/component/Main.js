@@ -89,21 +89,7 @@ function Main() {
   const [content, setContent] = useState(contentData);
   const [visibleContent, setVisibleContent] = useState(content.slice(0, 12));
 
-  useEffect(() => {
-    function handleScroll() {
-      const scrollPosition = window.innerHeight + window.pageYOffset;
-      const contentHeight = document.body.offsetHeight;
-      if (scrollPosition >= contentHeight) {
-        const nextContent = content.slice(
-          visibleContent.length,
-          visibleContent.length + 12
-        );
-        setVisibleContent((prevContent) => [...prevContent, ...nextContent]);
-      }
-    }
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [content, visibleContent]);
+  
 
   return (
     <ContentSection>
