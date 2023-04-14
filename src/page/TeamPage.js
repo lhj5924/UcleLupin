@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-// import profileKI from './../image/ki.jpg';
-// import profileLEE from './../image/lee.png';
-// import profileCHO from './../image/cho.png';
-// import profileCHOI from './../image/choi.jpg';
+import profileKI from '../image/ki.jpg';
+import profileLEE from './../image/lee.png';
+import profileCHO from './../image/cho.png';
+import profileCHOI from './../image/choi.jpg';
 
 let TeamPageCompo = styled.div`
     margin-top: 30px;
@@ -94,7 +94,7 @@ function TeamPage() {
             <ul>
                 <li>
                     <img
-                        src={require("./../image/ki.jpg").default}
+                        src={profileKI}
                         alt="프로필"
                     />
                     <div className="profile">
@@ -112,7 +112,7 @@ function TeamPage() {
                 </li>
                 <li>
                     <img
-                        src={require("./../image/lee.png").default}
+                        src={profileLEE}
                         alt="프로필"
                     />
                     <div className="profile">
@@ -130,7 +130,7 @@ function TeamPage() {
                 </li>
                 <li>
                     <img
-                        src={require("./../image/cho.png").default}
+                        src={profileCHO}
                         alt="프로필"
                     />
                     <div className="profile">
@@ -148,7 +148,7 @@ function TeamPage() {
                 </li>
                 <li>
                     <img
-                        src={require("./../image/choi.jpg").default}
+                        src={profileCHOI}
                         alt="프로필"
                     />
                     <div className="profile">
