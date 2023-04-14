@@ -9,7 +9,6 @@ let TeamPageCompo = styled.div`
     margin-top: 30px;
     background-color: white;
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,12 +21,16 @@ let TeamPageCompo = styled.div`
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
         @media screen and (max-width: 1200px) {
+            margin-top: 200px;
+            margin-bottom: 280px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gird-gap: 10px;
+            grid-gap: 10px;
         }
         @media screen and (max-width: 996px) {
             /* width: 100vw; */
+            margin-top: 100px;
+            margin-bottom: 30px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
