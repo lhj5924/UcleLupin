@@ -33,6 +33,9 @@ let TeamPageCompo = styled.div`
         }
         @media screen and (max-width: 704px) {
             /* width: 100vw; */
+            margin-top: 100px;
+            height: auto;
+            margin-bottom: 20px;
             display: grid;
             grid-template-columns: repeat(1, 1fr);
         }
