@@ -1,9 +1,9 @@
-import React from 'react'
-import styled from 'styled-components';
-import profileKI from './../image/지원님프로필.jpg';
-import profileLEE from './../image/현진님프로필.png';
-import profileCHO from './../image/지현님프로필.png';
-import profileCHOI from './../image/예슬님프로필.jpg';
+import React from "react";
+import styled from "styled-components";
+// import profileKI from './../image/ki.jpg';
+// import profileLEE from './../image/lee.png';
+// import profileCHO from './../image/cho.png';
+// import profileCHOI from './../image/choi.jpg';
 
 let TeamPageCompo = styled.div`
     margin-top: 30px;
@@ -15,30 +15,29 @@ let TeamPageCompo = styled.div`
     justify-content: center;
     align-items: center;
     /* padding-top: 50px; */
-    ul{
+    ul {
         list-style: none;
         font-size: 20px;
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 30px;
-        @media screen and (max-width: 1200px){
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gird-gap: 10px;
+        @media screen and (max-width: 1200px) {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gird-gap: 10px;
         }
-        @media screen and (max-width: 996px){
-        /* width: 100vw; */
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
+        @media screen and (max-width: 996px) {
+            /* width: 100vw; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
-        @media screen and (max-width: 704px){
-        /* width: 100vw; */
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
+        @media screen and (max-width: 704px) {
+            /* width: 100vw; */
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
         }
-        
     }
-    li{
+    li {
         width: 280px;
         height: 360px;
         /* border: 2px solid darkgrey; */
@@ -49,109 +48,125 @@ let TeamPageCompo = styled.div`
         justify-content: start;
         align-items: center;
         padding-top: 10px;
-        @media screen and (max-width: 1200px){
+        @media screen and (max-width: 1200px) {
             width: 100%;
         }
-        @media screen and (max-width: 996px){
+        @media screen and (max-width: 996px) {
             width: 100%;
         }
-        @media screen and (max-width: 704px){
+        @media screen and (max-width: 704px) {
             width: 100%;
         }
     }
-    li:hover{
-        background: linear-gradient(50deg,#eaafc8, #654ea3);
-       font-weight: bold;
-       color: #ffff;
+    li:hover {
+        background: linear-gradient(50deg, #eaafc8, #654ea3);
+        font-weight: bold;
+        color: #ffff;
     }
-    .img{
+    img {
         width: 100px;
         height: 100px;
         /* border: 1px solid black; */
         border-radius: 50%;
-        text-align: center;
-        background-size: cover;
-        background-position : center;
-        background-repeat: no-repeat;
         margin-bottom: 14px;
         margin-top: 20px;
     }
-  
-    .ki{
-        background-image: url(${profileKI});
-    }
-    .lee{
-        background-image: url(${profileLEE});
-        background-size : contain;
-    }
-    .cho{
-        background-image: url(${profileCHO});
-        background-size: contain;
-    }
-    .choi{
-        background-image: url(${profileCHOI});
-    }
-    p{
+
+    p {
         font-size: 16px;
-        margin-bottom : 10px;
+        margin-bottom: 10px;
     }
-    p:last-of-type{
+    p:last-of-type {
         margin-top: 30px;
-        
     }
-    a{
+    a {
         font-size: 16px;
         margin-top: 30px;
     }
-    .name{
+    .name {
         font-size: 26px;
         margin-bottom: 40px;
     }
 `;
-function TeamPage(){
-    
+function TeamPage() {
     return (
         <TeamPageCompo>
             <ul>
                 <li>
-                    <div className='img ki'></div>
-                    <div className='profile'>
-                        <p className='name'>기지원</p>
+                    <img
+                        src={require("./../image/ki.jpg").default}
+                        alt="프로필"
+                    />
+                    <div className="profile">
+                        <p className="name">기지원</p>
                         <p>담당 컴포넌트 ➤ Team Page</p>
                         <p>Github URL </p>
-                        <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-11--teamPage'>🔗 UcleLupin/TeamPage</a>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/lhj5924/UcleLupin/tree/TCTZ-11--teamPage"
+                        >
+                            🔗 UcleLupin/TeamPage
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div className='img lee'></div>
-                    <div className='profile'>
-                        <p className='name'>이현진</p>
+                    <img
+                        src={require("./../image/lee.png").default}
+                        alt="프로필"
+                    />
+                    <div className="profile">
+                        <p className="name">이현진</p>
                         <p>담당 컴포넌트 ➤ List</p>
                         <p>Github URL </p>
-                        <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-10--feature-list'>🔗 UcleLupin/List</a>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/lhj5924/UcleLupin/tree/TCTZ-10--feature-list"
+                        >
+                            🔗 UcleLupin/List
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div className='img cho'></div>
-                    <div className='profile'>
-                        <p className='name'>조지현</p>
+                    <img
+                        src={require("./../image/cho.png").default}
+                        alt="프로필"
+                    />
+                    <div className="profile">
+                        <p className="name">조지현</p>
                         <p>담당 컴포넌트 ➤ Main</p>
                         <p>Github URL </p>
-                        <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-9--feature-main'>🔗 UcleLupin/Main</a>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/lhj5924/UcleLupin/tree/TCTZ-9--feature-main"
+                        >
+                            🔗 UcleLupin/Main
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div className='img choi'></div>
-                    <div className='profile'>
-                        <p className='name'>최예슬</p>
+                    <img
+                        src={require("./../image/choi.jpg").default}
+                        alt="프로필"
+                    />
+                    <div className="profile">
+                        <p className="name">최예슬</p>
                         <p>담당 컴포넌트 ➤ Header&Footer</p>
                         <p>Github URL</p>
-                        <a target="_blank" rel="noreferrer" href='https://github.com/lhj5924/UcleLupin/tree/TCTZ-8--header-footer'>🔗 UcleLupin/Header&Footer</a>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/lhj5924/UcleLupin/tree/TCTZ-8--header-footer"
+                        >
+                            🔗 UcleLupin/Header&Footer
+                        </a>
                     </div>
                 </li>
             </ul>
         </TeamPageCompo>
-    )
+    );
 }
 
 export default TeamPage;
